@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.culinars.culinars.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_fridge_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="@color/colorCardBackground"
+        app:cardElevation="3dp">
+        <FrameLayout
+            android:id="@+id/card_fridge_gradient_container"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/card_fridge_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cooking_prep3"
+                android:scaleType="centerCrop"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_black_horizontal"/>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/card_fridge_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:text="All Favorites"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/card_fridge_check"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/check_white"
+            android:layout_gravity="bottom|end"/>
+    </android.support.v7.widget.CardView>
+</com.culinars.culinars.SquareFrameLayout>
